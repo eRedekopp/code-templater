@@ -7,6 +7,7 @@ VARSTRING = "<VAR>"  # The string we use to indicate variables in the template
 def print_help():
     print("Usage:")
     print("{} TEMPLATE_FILE ARG_FILE".format(sys.argv[0]))
+    exit(1)
 
 
 def fill_madlib(template, args):
@@ -50,6 +51,7 @@ if __name__ == "__main__":
         print("{} Error: Found {} args in file ({}) but expected {}"
               .format(sys.argv[0], num_arg_vars, arg_filename,
                       num_arg_vars + num_arg_vars % num_template_vars))
+        exit(1)
 
     # Fill in and print the madlib as many times as we need to
     for i in range(num_arg_vars // num_template_vars):

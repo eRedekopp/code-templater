@@ -6,19 +6,19 @@ This is a solution I cooked up to Java not having proper preprocessor macros lik
 Read from the template file, replace all instances of <VAR> with lines from the arg file, in the same order.
   
   
-####Sample argument file:
+#### Sample argument file:
     GET_INSTALLED_APPLICATIONS
     new ArrayList<ApplicationInfo>
     GET_INSTALED_PACKAGES
     new ArrayList<PackageInfo>
     ...
 
-####Sample template file:
+#### Sample template file:
     public static void generate_<VAR>() {
         return <VAR>;
     }
 
-####Sample output:
+#### Sample output:
     public static void generate_GET_INSTALLED_APPLIATIONS() {
     	return new ArrayList<ApplicationInfo>
     }

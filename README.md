@@ -3,7 +3,7 @@ I called it code-templater because I used it for templating repetitive Java code
 
 This is a solution I cooked up to Java not having proper preprocessor macros like C. Sometimes you just have to write some repetitive code and you can't turn it into a function, this hopes to make that process a little easier.
 
-Read from the template file, replace all instances of <VAR> with lines from the arg file, in the same order.
+Read from the template file, replace all instances of \<VAR\> with lines from the arg file, in the same order.
   
   
 #### Sample argument file:

@@ -1,0 +1,4 @@
+GET_INSTALLED_APPLICATIONS
+new ArrayList<ApplicationInfo>
+GET_INSTALED_PACKAGES
+new ArrayList<PackageInfo>

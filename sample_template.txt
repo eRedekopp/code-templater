@@ -1,0 +1,3 @@
+public static void generate_<VAR>() {
+    return <VAR>;
+}

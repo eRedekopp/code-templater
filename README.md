@@ -4,6 +4,12 @@ I called it code-templater because I used it for templating repetitive Java code
 This is a solution I cooked up to Java not having proper preprocessor macros like C. Sometimes you just have to write some repetitive code and you can't turn it into a function, this hopes to make that process a little easier. I couldn't find plugins for this in Intellij or Emacs so I decided to write one myself, although in hindsight I probably could have just found some first-year student's implementation of madlibs and used that... lib and learn I guess. 
 
 Read from the template file, replace all instances of \<VAR\> with lines from the arg file, in the same order.
+
+#### Usage
+
+python3 madlib.py TEMPLATE_FILE ARG_FILE
+
+OR make it executable and do it as a shell script
   
   
 #### Sample argument file:
